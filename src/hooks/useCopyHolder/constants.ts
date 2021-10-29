@@ -1,0 +1,1 @@
+export const OUT_OF_SCREEN_TEXT_OFFSET = 400;

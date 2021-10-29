@@ -1,0 +1,83 @@
+{
+  "name": "boilerplate-react-ts-styled",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
+    "@testing-library/user-event": "^10.0.1",
+    "@types/jest": "^25.2.1",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/lodash.get": "^4.4.6",
+    "@types/lodash.isequal": "^4.5.5",
+    "@types/node": "^13.11.1",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-lazyload": "^2.6.0",
+    "@types/react-router-dom": "^5.1.4",
+    "@types/styled-components": "^5.1.0",
+    "axios": "^0.19.2",
+    "history": "^4.10.1",
+    "json-server": "^0.16.1",
+    "lint-staged": "^10.1.3",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.get": "^4.4.2",
+    "lodash.isequal": "^4.5.0",
+    "moment": "^2.24.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-lazyload": "^3.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "~3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "tslint": "tslint src/**/*.{ts,tsx}",
+    "lint:staged": "lint-staged",
+    "eject": "react-scripts eject",
+    "format": "prettier --write --ignore-path .gitignore \"*/**/*.{js,jsx,ts,tsx,json}\"",
+    "format:staged": "prettier --parser typescript --write",
+    "mock:api": "json-server --watch data/index.js --port 4000 --delay 700 --routes routes.json"
+  },
+  "proxy": "http://localhost:4000/",
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --parser typescript --write",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint:staged",
+    "tslint",
+    "format:staged"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "maxDeviceLimit": 50,
+  "members": [
+    {
+      "id": "cloud-qa+stable_scenario3@cloud.com",
+      "username": "cloud-qa+stable_scenario3@cloud.com",
+      "email": "cloud-qa+stable_scenario3@cloud.com"
+    },
+    {
+      "id": "T3Sw2Esdfsdfln1IDKEE-OPbPYHg",
+      "username": "kyryl",
+      "devices": [
+        {
+          "id": "f1a861c6-c3b3-4e8f-bc38-d44a0cfdc02f",
+          "name": "kyryl",
+          "commonName": "scenario3/kyryl/f1a861c6-c3b3-4e8f-bc38-d44a0cfdc02f"
+        }
+      ]
+    },
+    {
+      "id": "test_user_to_delete@scenario3",
+      "username": "test_user_to_delete",
+      "devices": [
+        {
+          "id": "w7sZ5vsdfhC1elcvOCC4OT3EyA",
+          "name": "device_1",
+          "commonName": "scenario3/test_user_to_delete/7836a41d-a252-47e3-86f4-51907b83a811"
+        }
+      ]
+    },
+    {
+      "id": "user1@scenario3",
+      "username": "user1",
+      "devices": [
+        {
+          "id": "28160391-a163-4e48-8a7c-37e82297b158",
+          "name": "user1_device_1_new",
+          "commonName": "scenario3/user1/28160391-a163-4e48-8a7c-37e82297b158"
+        }
+      ]
+    },
+    {
+      "id": "user2@scenario3",
+      "username": "user2",
+      "devices": [
+        {
+          "id": "5a16e7bc-53a3-48c5-8123-1fa541fbe5eb",
+          "name": "user2_device_1_new",
+          "commonName": "scenario3/user2/5a16e7bc-53a3-48c5-8123-1fa541fbe5eb"
+        }
+      ]
+    }
+  ],
+  "networks": [
+    {
+      "id": "6a97f9c2-b530-4994-a7f3-45f17e2bd23d",
+      "name": "Network1",
+      "networkSubnets": ["192.168.31.0/24", "172.16.31.0/24", "10.0.31.0/24"],
+      "systemSubnets": ["100.96.1.0/28", "fd:0:0:8100::/64"],
+      "connectors": [
+        {
+          "id": "d0758b04-f339-47fe-95ed-f37a88b7d57d",
+          "name": "scen3_con1",
+          "commonName": "scenario3/connector/6a97f9c2-b530-4994-a7f3-45f17e2bd23d_d0758b04-f339-47fe-95ed-f37a88b7d57d"
+        }
+      ]
+    },
+    {
+      "id": "90116caa-36ad-4c0c-9225-4e8c8ef7dc6e",
+      "name": "Network2",
+      "networkSubnets": ["192.168.32.0/24", "172.16.32.0/24"],
+      "systemSubnets": ["100.96.1.16/28", "fd:0:0:8101::/64"],
+      "connectors": [
+        {
+          "id": "3c7742d5-c4a8-4d54-af5a-88526cd9f45c",
+          "name": "scen3_con2",
+          "commonName": "scenario3/connector/90116caa-36ad-4c0c-9225-4e8c8ef7dc6e_3c7742d5-c4a8-4d54-af5a-88526cd9f45c"
+        }
+      ]
+    },
+    {
+      "id": "c2259b7d-d344-4d3f-a53d-f8746a9468d9",
+      "name": "test_network_delete",
+      "networkSubnets": ["23.23.23.0/24"],
+      "systemSubnets": ["100.96.1.32/28", "fd:0:0:8102::/64"],
+      "connectors": [
+        {
+          "id": "550623ea-89cb-4889-bac9-acad7229038f",
+          "name": "aaaaa",
+          "commonName": "scenario3/connector/c2259b7d-d344-4d3f-a53d-f8746a9468d9_550623ea-89cb-4889-bac9-acad7229038f"
+        }
+      ]
+    }
+  ],
+  "hosts": [
+    {
+      "id": "ef5883ca-9508-4735-a424-449563e70b16",
+      "name": "Host1",
+      "systemSubnets": ["100.96.1.48/28", "fd:0:0:8103::/64"],
+      "connectors": [
+        {
+          "id": "ba0aeaee-eb31-4c75-abb4-83eb4c132a93",
+          "name": "host1_con1",
+          "commonName": "scenario3/connector/ef5883ca-9508-4735-a424-449563e70b16_ba0aeaee-eb31-4c75-abb4-83eb4c132a93"
+        }
+      ]
+    },
+    {
+      "id": "95891b78-a8d2-462a-9965-d51010d5f44c",
+      "name": "Host2",
+      "systemSubnets": ["100.96.1.64/28", "fd:0:0:8104::/64"],
+      "connectors": [
+        {
+          "id": "1a96cb19-42a2-4d56-95c0-426ff4e935b9",
+          "name": "host2_con2",
+          "commonName": "scenario3/connector/95891b78-a8d2-462a-9965-d51010d5f44c_1a96cb19-42a2-4d56-95c0-426ff4e935b9"
+        },
+        {
+          "id": "6be99021-f885-4e7a-8159-1e7d6e759119",
+          "name": "host2_con1",
+          "commonName": "scenario3/connector/95891b78-a8d2-462a-9965-d51010d5f44c_6be99021-f885-4e7a-8159-1e7d6e759119"
+        },
+        {
+          "id": "eb805dbf-77f6-472c-8647-b087cfb11b60",
+          "name": "host2_con3",
+          "commonName": "scenario3/connector/95891b78-a8d2-462a-9965-d51010d5f44c_eb805dbf-77f6-472c-8647-b087cfb11b60"
+        }
+      ]
+    },
+    {
+      "id": "f862726c-3968-471b-85f1-bb4da48ed9bd",
+      "name": "test_host_to_delete",
+      "systemSubnets": ["100.96.1.80/28", "fd:0:0:8105::/64"],
+      "connectors": [
+        {
+          "id": "34bd0ce0-e4a4-4e4e-84d3-d2e02afa6276",
+          "name": "3r23r",
+          "commonName": "scenario3/connector/f862726c-3968-471b-85f1-bb4da48ed9bd_34bd0ce0-e4a4-4e4e-84d3-d2e02afa6276"
+        }
+      ]
+    }
+  ]
+}

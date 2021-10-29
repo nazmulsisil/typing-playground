@@ -1,0 +1,1 @@
+export const sampleText = `And accordingly, the good lady bundled up her darlings in woollen jackets and wadded sacks, and put comforters round their necks, and a pair of striped gaiters on each little pair of legs, and worsted mittens on their hands, and gave them a kiss apiece, by way of a spell to keep away Jack Frost.`;
